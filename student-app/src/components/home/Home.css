@@ -1,0 +1,19 @@
+.table__component{
+    margin-top: 50px;
+}
+
+.btn.btn-primary{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn.btn-danger{
+    margin-left: 15px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.red{
+    color: red !important;
+    font-weight: bold;
+}

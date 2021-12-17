@@ -1,0 +1,34 @@
+.navbar{
+    background: linear-gradient(45deg, black, teal);
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover{
+    color: white !important;
+}
+
+.navbar-nav{
+    margin-left: auto !important;
+}
+
+.btn.btn-outline-success{
+    border: 1px solid white !important;
+    background: linear-gradient(45deg, black, teal) !important;
+    color: white !important;
+}
+
+.btn.btn-outline-success:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.modal__style{
+    height: 100vh !important;
+}

@@ -1,0 +1,123 @@
+{
+  "students": [
+    {
+      "username": "ks raja",
+      "dob": "17-Jul-1997",
+      "age": "24",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "username": "amar",
+      "dob": "23-april-1999",
+      "age": "23",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "username": "prabhash",
+      "dob": "17-Jul-1977",
+      "age": "25",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "username": "madha",
+      "dob": "17-Jul-1967",
+      "age": "23",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "username": "chandu",
+      "dob": "17-Jul-1997",
+      "age": "23",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "username": "pandu",
+      "dob": "17-Jul-1999",
+      "age": "21",
+      "gender": "male",
+      "id": 7
+    },
+    {
+      "username": "rudra",
+      "dob": "17-Jul-1999",
+      "age": "21",
+      "gender": "male",
+      "id": 8
+    },
+    {
+      "username": "pritam",
+      "dob": "17-Jul-1999",
+      "age": "21",
+      "gender": "male",
+      "id": 9
+    },
+    {
+      "username": "sipu",
+      "dob": "17-Jul-2012",
+      "age": "8",
+      "gender": "male",
+      "id": 10
+    },
+    {
+      "username": "lipu",
+      "dob": "17-Jul-2013",
+      "age": "10",
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "username": "chinu",
+      "dob": "17-Jul-1997",
+      "age": "23",
+      "gender": "male",
+      "id": 12
+    },
+    {
+      "username": "akash",
+      "dob": "17-Jul-1995",
+      "age": "26",
+      "gender": "male",
+      "id": 13
+    },
+    {
+      "username": "abhi",
+      "dob": "17-Jul-1997",
+      "age": "23",
+      "gender": "male",
+      "id": 14
+    },
+    {
+      "username": "m s dhoni",
+      "dob": "17-Jul-1985",
+      "age": "35",
+      "gender": "male",
+      "id": 17
+    },
+    {
+      "username": "virat",
+      "dob": "17-Jul-1995",
+      "age": "35",
+      "gender": "male",
+      "id": 18
+    },
+    {
+      "username": "saniya",
+      "dob": "17-Jul-2005",
+      "age": "10",
+      "gender": "female",
+      "id": 19
+    },
+    {
+      "username": "aaaaaa",
+      "dob": "17-Jul-1997",
+      "age": "10",
+      "gender": "male",
+      "id": 20
+    }
+  ]
+}
