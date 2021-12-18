@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Pagination = ({ showPerPage, onPaginationChange, total }) => {
   const [counter, setCounter] = useState(1);
   const [numberOfButtons, setNumberOfButoons] = useState(
     Math.ceil(total / showPerPage)
   );
+  console.log(numberOfButtons);
 
   useEffect(() => {
     const value = showPerPage * counter;
@@ -31,34 +33,34 @@ const Pagination = ({ showPerPage, onPaginationChange, total }) => {
       <nav aria-label="Page navigation example">
         <ul className="pagination">
           <li className="page-item">
-            <a
+            <Link
               className="page-link"
-              href="!#"
+              to="/"
               onClick={() => onButtonClick("prev")}
             >
               Previous
-            </a>
+            </Link>
           </li>
 
           {new Array(numberOfButtons).fill("").map((el, index) => (
             <li className={`page-item ${index + 1 === counter ? "active" : null}`}>
-              <a
+              <Link
                 className="page-link"
-                href="!#"
+                to="/"
                 onClick={() => setCounter(index + 1)}
               >
                 {index + 1}
-              </a>
+              </Link>
             </li>
           ))}
           <li className="page-item">
-            <a
+            <Link
               className="page-link"
-              href="!#"
+              to="/"
               onClick={() => onButtonClick("next")}
             >
               Next
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -40,6 +40,7 @@ const Home = () => {
         navigate(`/editStudent/${id}`);
     }
 
+    //pagination
     const [showPerPage, setShowPerPage] = useState(4);
     const [pagination, setPagination] = useState({
       start: 0,
@@ -50,10 +51,22 @@ const Home = () => {
       setPagination({ start: start, end: end });
     };
 
+    //search state
+    const [searchItem, setSearchItem] = useState("");
+
     return (
         <>
             <div className="table__component">
                 <div className="container">
+                    <div className="search__field">
+                        <input 
+                            type="text" 
+                            placeholder='Search...'
+                            className='form-control'
+                            style={{marginBottom: "20px", width: "40%"}}
+                            onChange={(e) => setSearchItem(e.target.value)}
+                        />
+                    </div>
                     <table className="table">
                         <thead className='table-dark'>
                             <tr>
@@ -66,7 +79,20 @@ const Home = () => {
                         </thead>
                         <tbody className='table-secondary'>
                             {
-                                students.slice(pagination.start, pagination.end).map((student) => {
+                                students.slice(pagination.start, pagination.end)
+                                .filter((val) => {
+                                    if(searchItem == ""){
+                                        return val;
+                                    }else if(
+                                        val.username.includes(searchItem) ||
+                                        val.dob.includes(searchItem) ||
+                                        val.age.includes(searchItem) ||
+                                        val.gender.includes(searchItem)
+                                    ){
+                                        return val;
+                                    }
+                                })
+                                .map((student) => {
                                     return (
                                         <tr key={student.id}>
                                             <td>{student.username}</td>
